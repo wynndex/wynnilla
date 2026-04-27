@@ -1,0 +1,34 @@
+capped_target bg bar default default_width cooldown_condition cooldown_value
+if({:cooldown_condition};
+    {${:bg}@1^{:offset}};
+    {${:bg}@0^{:offset}}
+);
+{$pan@-73};
+if(neq(cap({:capped_target}); 0);
+    concat_st(
+        {$pan@11};
+        {template/bar/capped/fill/left({:capped_target}, {:bar})};
+        {$pan@-68};
+        {$pan@36};
+        {text/bar/capped/prefix({:capped_target})};
+        {text/bar/capped/content({:capped_target})};
+        {text/bar/capped/suffix({:capped_target})};
+        {$pan@-36}
+    );
+    if({:cooldown_condition};
+        concat_st(
+            {$pan@36};
+            {text/bar/cooldown/prefix({:cooldown_value})};
+            {text/bar/cooldown/content({:cooldown_value})};
+            {text/bar/cooldown/suffix({:cooldown_value})};
+            {$pan@-36}
+        );
+        concat_st(
+            {$pan@36};
+            {text/bar/static/prefix({:default_width})};
+            {text/bar/static/content({:default})};
+            {text/bar/static/suffix({:default_width})};
+            {$pan@-36}
+        )
+    )
+)

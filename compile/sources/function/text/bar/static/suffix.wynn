@@ -1,0 +1,6 @@
+width
+{$pan@-{:width}};
+styled_text(from_codepoint(add(
+    {$pan_half.V@-2};
+    {:width}
+)))

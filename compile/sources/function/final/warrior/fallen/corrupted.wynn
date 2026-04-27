@@ -1,0 +1,2 @@
+offset
+{template/bar/capped/left_with_cooldown(capped_corrupted, bar_bg_corrupted, bar_corrupted, "Not|Corrupted", 61, and(status_effect_active("Corrupted"); eq(cap(capped_corrupted); 0)), int(add(value(status_effect_duration("Corrupted")); 1)))}

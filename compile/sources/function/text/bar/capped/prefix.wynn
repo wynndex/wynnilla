@@ -1,0 +1,13 @@
+capped_target
+styled_text(from_codepoint(add(
+    {$pan_half.V@1};
+    -12;
+    if(gt(current({:capped_target}); 9); if(gt(current({:capped_target}); 99); -14; -9); -4);
+    if(eq(modulo(current({:capped_target}); 10); 1); 1; 0);
+    if(eq(modulo(int(div(current({:capped_target}); 10)); 10); 1); 1; 0);
+    if(eq(modulo(int(div(current({:capped_target}); 100)); 10); 1); 1; 0);
+    if(gt(cap({:capped_target}); 9); if(gt(cap({:capped_target}); 99); -14; -9); -4);
+    if(eq(modulo(cap({:capped_target}); 10); 1); 1; 0);
+    if(eq(modulo(int(div(cap({:capped_target}); 10)); 10); 1); 1; 0);
+    if(eq(modulo(int(div(cap({:capped_target}); 100)); 10); 1); 1; 0)
+)))

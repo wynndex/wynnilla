@@ -1,0 +1,8 @@
+value
+with_font(
+    styled_text(regex_replace(
+        {:value};
+        "(?<=.)(?!$)"; from_codepoint(4096)
+    ));
+    "wynnilla:bar/offset_{:offset+2}"
+)

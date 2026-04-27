@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "description": [
+            {"color":"gold","text":"wynndex.github.io/wynnilla"},
+            {"text":"\n"},
+            {"color":"gray","text":"v1.0"},
+            {"color":"#579116","text":" for Wynntils 4.1.10"}
+        ],
+        "max_format": [84, 0],
+        "min_format": [46, 0],
+        "pack_format": 75,
+        "supported_formats": {"max_inclusive": 84,"min_inclusive": 46}
+    }
+}

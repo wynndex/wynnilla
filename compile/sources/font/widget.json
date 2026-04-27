@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "function": "splay"
+    },
+    "spaces": {        
+        "pad": {
+            "function": "static_character",
+            "character": 4096,
+            "value": -1
+        }
+    },
+    "textures": {
+        "text": {
+            "path": "wynnilla:font/text/widget.png",
+            "function": "override",
+            "height": 8,
+            "chars": ["0123456789"]
+        }
+    }
+}

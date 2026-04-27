@@ -1,0 +1,56 @@
+{
+    "spaces": {
+        "pan_root": {
+            "function": "add_1",
+            "limit": 300,
+            "start": -300
+        },
+        "pan": {
+            "function": "add_1",
+            "limit": 301,
+            "start": 0
+        },
+        "pan_half_root": {
+            "function": "add_half",
+            "limit": 300,
+            "start": -150
+        },
+        "pan_half": {
+            "function": "add_half",
+            "limit": 302,
+            "start": 0
+        }
+    },
+    "textures": {
+        "bar_bg_corrupted": {
+            "path": "wynnilla:font/warrior/fallen/corrupted-bg.png",
+            "height": 20,
+            "chars": [1, 2]
+        },
+        "bar_corrupted": {
+            "path": "wynnilla:font/warrior/fallen/corrupted.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "widget_square_cooldown": {
+            "path": "wynnilla:font/base/widget-square-cooldown.png",
+            "height": 12,
+            "chars": [1, 1]
+        },
+        "widget_square_boiling_blood": {
+            "path": "wynnilla:font/warrior/fallen/boiling-blood.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_armour_breaker": {
+            "path": "wynnilla:font/warrior/fallen/armour-breaker.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_active": {
+            "path": "wynnilla:font/base/widget-square-active.png",
+            "height": 14,
+            "chars": [2, 1]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+cooldown_condition cooldown_value texture
+if({:cooldown_condition};
+    concat_st(
+        {$widget_square_cooldown^{:offset}};
+        {$pan@-14};
+        {$pan@7};
+        {text/widget/prefix({:cooldown_value})};
+        {text/widget/content({:cooldown_value})};
+        {text/widget/suffix({:cooldown_value})};
+        {$pan@-7}
+    );
+    concat_st(
+        {${:texture}@0^{:offset}};
+        {$pan@-13}
+    )
+)

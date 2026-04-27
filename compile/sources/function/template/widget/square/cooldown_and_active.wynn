@@ -1,0 +1,32 @@
+cooldown_condition cooldown_value active_condition active_value texture
+if({:active_condition};
+    concat_st(
+        {${:texture}@1^{:offset}};
+        {$pan@-14};
+        if(eq(mod(ticks; 2); 0);
+            {$widget_square_active@0^{:offset+-1}};
+            {$widget_square_active@1^{:offset+-1}}
+        );
+        {$pan@-15};
+        {$pan@7};
+        {text/widget/prefix({:active_value})};
+        {text/widget/content({:active_value})};
+        {text/widget/suffix({:active_value})};
+        {$pan@-7}
+    );
+    if({:cooldown_condition};
+        concat_st(
+            {$widget_square_cooldown^{:offset}};
+            {$pan@-14};
+            {$pan@7};
+            {text/widget/prefix({:cooldown_value})};
+            {text/widget/content({:cooldown_value})};
+            {text/widget/suffix({:cooldown_value})};
+            {$pan@-7}
+        );
+        concat_st(
+            {${:texture}@0^{:offset}};
+            {$pan@-13}
+        )
+    )
+)

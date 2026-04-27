@@ -1,0 +1,2 @@
+offset
+{template/widget/square/active(status_effect_active("Boiling|Blood"), int(add(value(status_effect_duration("Boiling|Blood")); 1)), widget_square_boiling_blood)}
