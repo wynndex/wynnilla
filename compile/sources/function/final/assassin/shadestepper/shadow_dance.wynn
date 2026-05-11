@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Shadow|Dance"), int(add(value(status_effect_duration("Shadow|Dance")); 1)), widget_square_shadow_dance)}

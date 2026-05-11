@@ -1,0 +1,7 @@
+offset
+{template/widget/square/cooldown_and_active(
+status_effect_active("Fortitude"), 
+int(add(value(status_effect_duration("Fortitude")); 1)), 
+string_contains(status_effect_prefix("Fortitude"); from_codepoint(9876)), 
+int(add(value(status_effect_duration("Fortitude")); 1)), 
+widget_square_fortitude)}

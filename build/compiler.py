@@ -160,6 +160,7 @@ def parse_curly_expressions(literal, function_map, argument_pool) -> str:
                         if texture_spec["mod"] == "V":
                             output.append(f"{char_id}")
                     else:
+                        # output.append(f"styled_text(\"{chr(char_id)}\")")
                         output.append(f"styled_text(from_codepoint({char_id}))")
                 else:
                     function_call_name = expval[0:expval.index("(")]
@@ -186,6 +187,7 @@ def parse_curly_expressions(literal, function_map, argument_pool) -> str:
     return "".join(output)
 
 def compile_function(file, name, function_map):
+    print(f"Compiler: {name}")
     with file.open("r") as f:
         content = f.read().split("\n")
         arguments = content[0].split(" ")

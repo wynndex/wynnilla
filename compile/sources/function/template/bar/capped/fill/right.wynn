@@ -1,0 +1,71 @@
+capped_target bar
+if(gt(pct({:capped_target}); 88);
+    if(gt(pct({:capped_target}); 95);
+        {${:bar}@0^{:offset+11}};
+        {${:bar}@6^{:offset+11}}
+    );
+    {${:bar}@3^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 78);
+    if(gt(pct({:capped_target}); 82);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 69);
+    if(gt(pct({:capped_target}); 73);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 60);
+    if(gt(pct({:capped_target}); 63);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 50);
+    if(gt(pct({:capped_target}); 54);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 41);
+    if(gt(pct({:capped_target}); 45);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 32);
+    if(gt(pct({:capped_target}); 36);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 23);
+    if(gt(pct({:capped_target}); 26);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 13);
+    if(gt(pct({:capped_target}); 17);
+        {${:bar}@1^{:offset+11}};
+        {${:bar}@7^{:offset+11}}
+    );
+    {${:bar}@4^{:offset+11}}
+); {$pan@-1};
+if(gt(pct({:capped_target}); 0);
+    if(gt(pct({:capped_target}); 8);
+        {${:bar}@2^{:offset+11}};
+        {${:bar}@8^{:offset+11}}
+    );
+    {${:bar}@5^{:offset+11}}
+)

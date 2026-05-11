@@ -1,0 +1,12 @@
+[
+    {
+        "target": "archer.json",
+        "x": 0,
+        "y": 0
+    },
+    {
+        "target": "warrior.json",
+        "x": 0,
+        "y": 0
+    }
+]

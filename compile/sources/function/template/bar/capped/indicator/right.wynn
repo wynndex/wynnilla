@@ -1,0 +1,21 @@
+capped_target thresh
+if(gte(cap({:capped_target}); {:thresh});
+    concat_st(
+        styled_text(from_codepoint(add(
+            {$pan.V@0};
+            int(mul(div({:thresh};cap({:capped_target}));-55));
+            55; 4
+        )));
+        if(gte(current({:capped_target}); {:thresh});
+            {$bar_indicator@1^{:offset+11}};
+            {$bar_indicator@0^{:offset+11}}
+        );
+        {$pan@-4};
+        styled_text(from_codepoint(add(
+            {$pan.V@0};
+            mul(int(mul(div({:thresh};cap({:capped_target}));-55));-1);
+            -55; -4
+        )))
+    );
+    {$pan@0}
+)

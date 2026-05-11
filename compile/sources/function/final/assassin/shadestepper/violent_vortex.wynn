@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Violent|Vortex"), int(add(value(status_effect_duration("Violent|Vortex")); 1)), widget_square_violent_vortex)}

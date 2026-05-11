@@ -1,0 +1,7 @@
+offset
+{template/widget/hex/cooldown_and_active(
+status_effect_active("Chant|of|the|Lunatic"), 
+int(add(value(status_effect_duration("Chant|of|the|Lunatic")); 1)), 
+and(status_effect_active("Strength"); gte(value(status_effect_modifier("Strength")); 15)), 
+int(add(value(status_effect_duration("Strength")); 1)), 
+widget_hex_chant_of_the_lunatic)}

@@ -1,0 +1,6 @@
+offset
+{template/widget/hex/cooldown_with_condition(
+status_effect_active("Rift|Rupture"), 
+int(add(value(status_effect_duration("Rift|Rupture")); 1)), 
+gt(value(status_effect_duration("Riftbound")); if(is_aspect_equipped("Riftwalker's|Embodiment|of|Reality|Alteration"); 10; 12)), 
+widget_hex_rift_rupture)}

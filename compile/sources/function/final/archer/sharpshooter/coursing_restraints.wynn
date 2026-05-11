@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Coursing|Restraints"), int(add(value(status_effect_duration("Coursing|Restraints")); 1)), widget_square_coursing_restraints)}

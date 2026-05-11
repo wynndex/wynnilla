@@ -1,0 +1,37 @@
+[
+    {
+        "target": "final/mage/riftwalker/distortion",
+        "x": 13,
+        "y": 20
+    },
+    {
+        "target": "final/mage/riftwalker/time_dilated",
+        "x": 13,
+        "y": 20
+    },
+    {
+        "target": "final/mage/riftwalker/dimensional_tear",
+        "x": 0,
+        "y": 25
+    },
+    {
+        "target": "final/mage/riftwalker/devitalize",
+        "x": 5,
+        "y": 12
+    },
+    {
+        "target": "final/mage/riftwalker/riftbound",
+        "x": 19,
+        "y": 6
+    },
+    {
+        "target": "final/mage/riftwalker/rift_rupture",
+        "x": 33,
+        "y": 12
+    },
+    {
+        "target": "final/mage/riftwalker/displacement",
+        "x": 38,
+        "y": 25
+    }
+]

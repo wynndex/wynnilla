@@ -1,0 +1,8 @@
+offset
+{template/widget/square/cooldown_and_active_with_condition(
+status_effect_active("Sunflare"), 
+int(add(value(status_effect_duration("Sunflare")); 1)), 
+gt(value(status_effect_duration("Sunflare")); 8), 
+int(add(value(status_effect_duration("Sunflare")); 1)), 
+gt(ophanim_healing_percent; 250), 
+widget_square_fortitude)}

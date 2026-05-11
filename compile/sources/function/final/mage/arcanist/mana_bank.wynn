@@ -1,0 +1,5 @@
+offset
+{template/bar/capped/right(capped_mana_bank, bar_bg_mana_bank, bar_mana_bank, "Mana|Bank", 44)};
+{template/bar/capped/indicator/right(capped_mana_bank, 30)};
+{template/bar/capped/indicator/right(capped_mana_bank, if(is_aspect_equipped("Arcanist's|Embodiment|of|Total|Obliteration"); 100; 120))};
+{template/bar/capped/indicator/right(capped_mana_bank, 140)}

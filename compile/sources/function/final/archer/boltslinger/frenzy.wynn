@@ -1,0 +1,4 @@
+offset
+{template/bar/capped/left(
+if(eq(value(status_effect_modifier("Frenzy")); 0); capped(0; 0); capped(int(value(status_effect_modifier("Frenzy"))); 60)), 
+bar_bg_frenzy, bar_frenzy, "Frenzy", 30)}

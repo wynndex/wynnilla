@@ -1,0 +1,12 @@
+[
+    {
+        "target": "final/shaman/acolyte/blood_pool",
+        "x": 0,
+        "y": 33
+    },
+    {
+        "target": "final/shaman/acolyte/bleeding",
+        "x": 44,
+        "y": 20
+    }
+]

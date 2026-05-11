@@ -1,0 +1,4 @@
+offset
+{template/bar/capped/left(
+if(eq(commander_duration; 0); capped(0; 0); capped(commander_duration; 30)), 
+bar_bg_commander, bar_commander, "Commander", 47)}

@@ -1,0 +1,8 @@
+value offset_shift
+with_font(
+    styled_text(regex_replace(
+        str({:value});
+        "(?<=.)(?!$)"; from_codepoint(4096)
+    ));
+    "wynnilla:widget/offset_{:offset+{:offset_shift}}"
+)

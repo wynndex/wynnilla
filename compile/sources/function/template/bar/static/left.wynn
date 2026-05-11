@@ -1,0 +1,17 @@
+bg condition prefix value suffix value_width default default_width
+{${:bg}^{:offset}};
+{$pan@-73};
+{$pan@36};
+if({:condition};
+    concat_st(
+        {text/bar/single/prefix({:value}, {:value_width})};
+        {text/bar/single/content({:prefix}, {:value}, {:suffix})};
+        {text/bar/single/suffix({:value}, {:value_width})}
+    );
+    concat_st(
+        {text/bar/static/prefix({:default_width})};
+        {text/bar/static/content({:default})};
+        {text/bar/static/suffix({:default_width})}
+    )
+);
+{$pan@-36}

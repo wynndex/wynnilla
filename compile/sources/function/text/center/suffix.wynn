@@ -1,0 +1,17 @@
+value
+styled_text(from_codepoint(add(
+    {$pan.V@0};
+    if(gt({:value}; 9); if(gt({:value}; 99); if(gt({:value}; 999); -21; -16); -11); -6);
+    if(eq(modulo({:value}; 10); 1); 2; 0);
+    if(eq(modulo(int(div({:value}; 10)); 10); 1); 2; 0);
+    if(eq(modulo(int(div({:value}; 100)); 10); 1); 2; 0);
+    if(eq(modulo(int(div({:value}; 1000)); 10); 1); 2; 0)
+)));
+styled_text(from_codepoint(add(
+    {$pan_half.V@-2};
+    if(gt({:value}; 9); if(gt({:value}; 99); if(gt({:value}; 999); 21; 16); 11); 6);
+    if(eq(modulo({:value}; 10); 1); -2; 0);
+    if(eq(modulo(int(div({:value}; 10)); 10); 1); -2; 0);
+    if(eq(modulo(int(div({:value}; 100)); 10); 1); -2; 0);
+    if(eq(modulo(int(div({:value}; 1000)); 10); 1); -2; 0)
+)))

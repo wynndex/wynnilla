@@ -1,0 +1,15 @@
+offset
+if(eq(debuffs_in_radius_value(32.0; "Discombobulated"); 0);
+    concat_st(
+        {$center_fill_discombobulated@0^{:offset}};
+        {$pan@-25}
+    );
+    concat_st(
+        if(gte(debuffs_in_radius_value(32.0; "Discombobulated"); 150);
+            {$center_fill_discombobulated@2^{:offset}};
+            {$center_fill_discombobulated@1^{:offset}}
+        );
+        {$pan@-25};
+        {template/center/text(debuffs_in_radius_value(32.0; "Discombobulated"))}
+    )
+)

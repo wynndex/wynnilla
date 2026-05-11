@@ -1,0 +1,17 @@
+[
+    {
+        "target": "archer/boltslinger.json",
+        "x": 16,
+        "y": 0
+    },
+    {
+        "target": "archer/trapper.json",
+        "x": 90,
+        "y": 0
+    },
+    {
+        "target": "archer/sharpshooter.json",
+        "x": 144,
+        "y": 0
+    }
+]

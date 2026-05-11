@@ -1,0 +1,17 @@
+[
+    {
+        "target": "warrior/fallen.json",
+        "x": 16,
+        "y": 0
+    },
+    {
+        "target": "warrior/battlemonk.json",
+        "x": 104,
+        "y": 0
+    },
+    {
+        "target": "warrior/paladin.json",
+        "x": 144,
+        "y": 0
+    }
+]

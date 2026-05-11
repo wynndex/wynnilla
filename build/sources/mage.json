@@ -1,0 +1,17 @@
+[
+    {
+        "target": "mage/light_bender.json",
+        "x": 16,
+        "y": 0
+    },
+    {
+        "target": "mage/riftwalker.json",
+        "x": 91,
+        "y": 0
+    },
+    {
+        "target": "mage/arcanist.json",
+        "x": 144,
+        "y": 0
+    }
+]

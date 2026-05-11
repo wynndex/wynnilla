@@ -1,0 +1,2 @@
+offset
+{template/widget/square/active(status_effect_active("Arcane|Speed"), int(add(value(status_effect_duration("Arcane|Speed")); 1)), widget_square_arcane_speed)}

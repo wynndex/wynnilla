@@ -1,0 +1,14 @@
+offset
+if(or(status_effect_active("Awakened"); eq(cap(capped_awakened_progress); 0));
+    concat_st({template/index_texture(int(mul(add(value(status_effect_duration("Awakened")); 1); 0.8)), 20, center_surround_awakened, 24)});
+    if(string_contains(shaman_mask(false;true); "H");
+        concat_st({template/index_texture(int(div(pct(capped_awakened_progress); 5)), 20, center_surround_awakened_heretic, 24)});
+        if(string_contains(shaman_mask(false;true); "F");
+            concat_st({template/index_texture(int(div(pct(capped_awakened_progress); 5)), 20, center_surround_awakened_fanatic, 24)});
+            if(string_contains(shaman_mask(false;true); "L");
+                concat_st({template/index_texture(int(div(pct(capped_awakened_progress); 5)), 20, center_surround_awakened_lunatic, 24)});
+                {$pan@0}
+            )
+        )
+    )
+)

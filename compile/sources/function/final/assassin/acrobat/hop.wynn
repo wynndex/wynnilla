@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Hop"), int(add(value(status_effect_duration("Hop")); 1)), widget_square_hop)}

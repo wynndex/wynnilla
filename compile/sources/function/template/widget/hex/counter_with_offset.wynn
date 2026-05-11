@@ -1,0 +1,16 @@
+counter_target texture offset_shift
+if(neq({:counter_target}; 0);
+    concat_st(
+        {${:texture}@1^{:offset+{:offset_shift}}};
+        {$pan@-13};
+        {$pan@6};
+        {text/widget/prefix({:counter_target})};
+        {text/widget/content/hex_with_offset({:counter_target}, {:offset_shift+3})};
+        {text/widget/suffix({:counter_target})};
+        {$pan@-6}
+    );
+    concat_st(
+        {${:texture}@0^{:offset+{:offset_shift}}};
+        {$pan@-13}
+    )
+)

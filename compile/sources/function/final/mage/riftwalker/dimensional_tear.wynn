@@ -1,0 +1,5 @@
+offset
+{template/widget/hex/active(
+status_effect_active("Dimensional|Tear"), 
+int(add(value(status_effect_duration("Dimensional|Tear")); 1)), 
+widget_hex_dimensional_tear)}

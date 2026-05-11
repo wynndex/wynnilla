@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Leap"), int(add(value(status_effect_duration("Leap")); 1)), widget_square_leap)}

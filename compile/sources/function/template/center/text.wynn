@@ -1,0 +1,6 @@
+value
+{$pan@12};
+{text/center/prefix({:value})};
+{text/center/content({:value})};
+{text/center/suffix({:value})};
+{$pan@-12}

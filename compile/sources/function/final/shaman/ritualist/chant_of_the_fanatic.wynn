@@ -1,0 +1,7 @@
+offset
+{template/widget/hex/cooldown_and_active(
+status_effect_active("Chant|of|the|Fanatic"), 
+int(add(value(status_effect_duration("Chant|of|the|Fanatic")); 1)), 
+string_contains(status_effect_prefix("Chant|of|the|Fanatic"); from_codepoint(10049)), 
+int(add(value(status_effect_duration("Chant|of|the|Fanatic")); 1)), 
+widget_hex_chant_of_the_fanatic)}

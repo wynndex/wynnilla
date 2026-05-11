@@ -1,0 +1,42 @@
+[
+    {
+        "target": "final/warrior/paladin/holy_power",
+        "x": 0,
+        "y": 33
+    },
+    {
+        "target": "final/warrior/paladin/cleansing_breeze",
+        "x": 58,
+        "y": 20
+    },
+    {
+        "target": "final/warrior/paladin/radiance",
+        "x": 44,
+        "y": 20
+    },
+    {
+        "target": "final/warrior/paladin/heavenly_trumpet",
+        "x": 30,
+        "y": 20
+    },
+    {
+        "target": "final/warrior/paladin/mantle_of_the_bovemists",
+        "x": 73,
+        "y": 33
+    },
+    {
+        "target": "final/warrior/paladin/buried_light",
+        "x": 16,
+        "y": 20
+    },
+    {
+        "target": "final/warrior/paladin/second_chance",
+        "x": 23,
+        "y": 7
+    },
+    {
+        "target": "final/warrior/paladin/provoke",
+        "x": 37,
+        "y": 7
+    }
+]

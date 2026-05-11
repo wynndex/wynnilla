@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown_and_active(status_effect_active("Second|Chance"), int(add(value(status_effect_duration("Second|Chance")); 1)), status_effect_active("Invincible"), int(add(value(status_effect_duration("Invincible")); 1)), widget_square_second_chance)}

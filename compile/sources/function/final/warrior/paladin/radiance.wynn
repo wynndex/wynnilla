@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown_and_active(status_effect_active("Radiance"), int(add(value(status_effect_duration("Radiance")); 1)), and(status_effect_active("Radiant"); gte(value(status_effect_modifier("Radiant")); 15)), int(add(value(status_effect_duration("Radiant")); 1)), widget_square_radiance)}

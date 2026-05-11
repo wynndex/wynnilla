@@ -1,0 +1,5 @@
+offset
+{$widget_square_bleeding^{:offset}};
+{$pan@-2};
+{template/widget/square/counter/short(gt(debuffs_in_radius_value(32.0; "Bleeding"); 0), debuffs_in_radius_value(32.0; "Bleeding"))};
+{$pan@-11}

@@ -1,0 +1,13 @@
+condition value
+{$widget_square_counter_short^{:offset}};
+{$pan@-16};
+if({:condition};
+    concat_st(
+        {$pan@7};
+        {text/widget/prefix({:value})};
+        {text/widget/content/square({:value})};
+        {text/widget/suffix({:value})};
+        {$pan@-7}
+    );
+    {$pan@0}
+)

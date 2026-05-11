@@ -1,0 +1,17 @@
+[
+    {
+        "target": "final/archer/trapper/summons",
+        "x": 14,
+        "y": 20
+    },
+    {
+        "target": "final/archer/trapper/chilling_snare",
+        "x": 0,
+        "y": 27
+    },
+    {
+        "target": "final/archer/trapper/fire_creep",
+        "x": 40,
+        "y": 27
+    }
+]

@@ -1,0 +1,2 @@
+offset
+{template/index_texture(int(div(value(status_effect_modifier("Time|Dilated")); 10)), 20, center_surround_time_dilated, 24)}

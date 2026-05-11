@@ -1,0 +1,6 @@
+index max texture width offset_mod
+styled_text(from_codepoint(add(
+    {${:texture}.V^{:offset+{:offset_mod}}};
+    min({:index}; {:max})
+)));
+{$pan@-{:width+1}}

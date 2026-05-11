@@ -1,0 +1,5 @@
+offset
+{template/bar/capped/right(capped_blood_pool, bar_bg_blood_pool, bar_blood_pool, "Blood|Pool", 44)};
+{template/bar/capped/indicator/right(capped_blood_pool, 15)};
+{template/bar/capped/indicator/right(capped_blood_pool, 30)};
+{template/bar/capped/indicator/right(capped_blood_pool, 70)}

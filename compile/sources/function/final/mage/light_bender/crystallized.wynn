@@ -1,0 +1,5 @@
+offset
+{$widget_square_crystallized^{:offset}};
+{$pan@-2};
+{template/widget/square/counter/long(gt(debuffs_in_radius_value(32.0; "Crystallized"); 0), debuffs_in_radius_value(32.0; "Crystallized"))};
+{$pan@-11}

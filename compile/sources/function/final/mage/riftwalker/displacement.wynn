@@ -1,0 +1,5 @@
+offset
+{template/widget/hex/cooldown(
+status_effect_active("Displacement"), 
+int(add(value(status_effect_duration("Displacement")); 1)), 
+widget_hex_displacement)}

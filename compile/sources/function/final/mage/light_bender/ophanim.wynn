@@ -1,0 +1,17 @@
+offset
+{template/bar/static/left(bar_bg_ophanim, ophanim_active, "", ophanim_healing_percent, "%|Healed", 38, "Ophanim", 33)};
+{$pan@14};
+{template/index_texture_offset(ophanim_orb(0), 3, bar_ophanim@1, 6, 11)};
+{$pan@8};
+{template/index_texture_offset(ophanim_orb(1), 3, bar_ophanim@1, 6, 11)};
+{$pan@8};
+{template/index_texture_offset(ophanim_orb(2), 3, bar_ophanim@1, 6, 11)};
+{$pan@8};
+{template/index_texture_offset(ophanim_orb(3), 3, bar_ophanim@1, 6, 11)};
+{$pan@8};
+{template/index_texture_offset(ophanim_orb(4), 3, bar_ophanim@1, 6, 11)};
+{$pan@8};
+{template/index_texture_offset(ophanim_orb(5), 3, bar_ophanim@1, 6, 11)};
+{$pan@8};
+{template/index_texture_offset(ophanim_orb(6), 3, bar_ophanim@1, 6, 11)};
+{$pan@-62}

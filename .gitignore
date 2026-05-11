@@ -8,3 +8,4 @@ pack/Wynnilla UI/assets/wynnilla/font/*
 generated/*
 compile/sources/old/*
 *.psd
+*.DS_Store

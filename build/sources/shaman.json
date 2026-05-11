@@ -1,0 +1,17 @@
+[
+    {
+        "target": "shaman/summoner.json",
+        "x": 0,
+        "y": 0
+    },
+    {
+        "target": "shaman/ritualist.json",
+        "x": 96,
+        "y": 0
+    },
+    {
+        "target": "shaman/acolyte.json",
+        "x": 144,
+        "y": 0
+    }
+]

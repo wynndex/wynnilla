@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(lt(time_since_last_damage_dealt; 4000), int(sub(5; div(time_since_last_damage_dealt; 1000))), widget_square_initiator)}

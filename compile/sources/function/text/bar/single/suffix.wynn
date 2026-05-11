@@ -1,0 +1,16 @@
+value width
+styled_text(from_codepoint(add(
+    {$pan.V@-{:width}};
+    if(gt({:value}; 9); if(gt({:value}; 99); -14; -9); -4);
+    if(eq(modulo({:value}; 10); 1); 1; 0);
+    if(eq(modulo(int(div({:value}; 10)); 10); 1); 1; 0);
+    if(eq(modulo(int(div({:value}; 100)); 10); 1); 1; 0)
+)));
+styled_text(from_codepoint(add(
+    {$pan_half.V@-2};
+    {:width};
+    if(gt({:value}; 9); if(gt({:value}; 99); 14; 9); 4);
+    if(eq(modulo({:value}; 10); 1); -1; 0);
+    if(eq(modulo(int(div({:value}; 10)); 10); 1); -1; 0);
+    if(eq(modulo(int(div({:value}; 100)); 10); 1); -1; 0)
+)))

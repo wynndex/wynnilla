@@ -22,18 +22,68 @@
         }
     },
     "textures": {
-        "bar_bg_corrupted": {
-            "path": "wynnilla:font/warrior/fallen/corrupted-bg.png",
-            "height": 20,
-            "chars": [1, 2]
-        },
-        "bar_corrupted": {
-            "path": "wynnilla:font/warrior/fallen/corrupted.png",
-            "height": 8,
-            "chars": [9, 1]
-        },
         "widget_square_cooldown": {
             "path": "wynnilla:font/base/widget-square-cooldown.png",
+            "height": 12,
+            "chars": [1, 1]
+        },
+        "widget_square_active": {
+            "path": "wynnilla:font/base/widget-square-active.png",
+            "height": 14,
+            "chars": [2, 1]
+        },
+        "widget_square_locked": {
+            "path": "wynnilla:font/base/widget-square-locked.png",
+            "height": 12,
+            "chars": [1, 1]
+        },
+        "widget_hex_cooldown": {
+            "path": "wynnilla:font/base/widget-hex-cooldown.png",
+            "height": 13,
+            "chars": [1, 1]
+        },
+        "widget_hex_active": {
+            "path": "wynnilla:font/base/widget-hex-active.png",
+            "height": 15,
+            "chars": [2, 1]
+        },
+        "widget_hex_locked": {
+            "path": "wynnilla:font/base/widget-hex-locked.png",
+            "height": 13,
+            "chars": [1, 1]
+        },
+        "bar_indicator": {
+            "path": "wynnilla:font/base/indicator.png",
+            "height": 6,
+            "chars": [2, 1]
+        },
+        "center": {
+            "path": "wynnilla:font/base/center.png",
+            "height": 27,
+            "chars": [1, 1]
+        },
+        "center_darkened": {
+            "path": "wynnilla:font/base/center-darkened.png",
+            "height": 27,
+            "chars": [1, 1]
+        },
+        "sidebar": {
+            "path": "wynnilla:font/base/sidebar.png",
+            "height": 41,
+            "chars": [1, 1]
+        },
+        "sidebar_locked": {
+            "path": "wynnilla:font/base/sidebar-locked.png",
+            "height": 41,
+            "chars": [1, 1]
+        },
+        "widget_square_counter_short": {
+            "path": "wynnilla:font/base/widget-square-counter-short.png",
+            "height": 12,
+            "chars": [1, 1]
+        },
+        "widget_square_counter_long": {
+            "path": "wynnilla:font/base/widget-square-counter-long.png",
             "height": 12,
             "chars": [1, 1]
         },
@@ -47,10 +97,325 @@
             "height": 12,
             "chars": [2, 1]
         },
-        "widget_square_active": {
-            "path": "wynnilla:font/base/widget-square-active.png",
-            "height": 14,
+        "widget_square_buried_light": {
+            "path": "wynnilla:font/warrior/paladin/buried-light.png",
+            "height": 12,
             "chars": [2, 1]
+        },
+        "widget_square_cleansing_breeze": {
+            "path": "wynnilla:font/warrior/paladin/cleansing-breeze.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_heavenly_trumpet": {
+            "path": "wynnilla:font/warrior/paladin/heavenly-trumpet.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_provoke": {
+            "path": "wynnilla:font/warrior/paladin/provoke.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_radiance": {
+            "path": "wynnilla:font/warrior/paladin/radiance.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_second_chance": {
+            "path": "wynnilla:font/warrior/paladin/second-chance.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_initiator": {
+            "path": "wynnilla:font/archer/sharpshooter/initiator.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_ghostly_trigger": {
+            "path": "wynnilla:font/archer/sharpshooter/ghostly-trigger.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_coursing_restraints": {
+            "path": "wynnilla:font/archer/sharpshooter/coursing-restraints.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_repel": {
+            "path": "wynnilla:font/archer/sharpshooter/repel.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_leap": {
+            "path": "wynnilla:font/archer/boltslinger/leap.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_parting_gift": {
+            "path": "wynnilla:font/archer/boltslinger/parting-gift.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_bleeding": {
+            "path": "wynnilla:font/shaman/acolyte/bleeding.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_fortitude": {
+            "path": "wynnilla:font/mage/light_bender/fortitude.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_freezing_sigil": {
+            "path": "wynnilla:font/mage/light_bender/freezing-sigil.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_purification": {
+            "path": "wynnilla:font/mage/light_bender/purification.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_sunflare": {
+            "path": "wynnilla:font/mage/light_bender/sunflare.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_crystallized": {
+            "path": "wynnilla:font/mage/light_bender/crystallized.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_arcane_speed": {
+            "path": "wynnilla:font/mage/arcanist/arcane-speed.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_burning_sigil": {
+            "path": "wynnilla:font/mage/arcanist/burning-sigil.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_judrajim": {
+            "path": "wynnilla:font/mage/arcanist/judrajim.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_hummingbirds": {
+            "path": "wynnilla:font/shaman/summoner/hummingbirds.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_fortified_formation": {
+            "path": "wynnilla:font/shaman/summoner/fortified-formation.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_whipped": {
+            "path": "wynnilla:font/shaman/summoner/whipped.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_hex_pressure_strength": {
+            "path": "wynnilla:font/warrior/battlemonk/pressure-strength.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_chilling_snare": {
+            "path": "wynnilla:font/archer/trapper/chilling-snare.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_fire_creep": {
+            "path": "wynnilla:font/archer/trapper/fire-creep.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_summoner_crows": {
+            "path": "wynnilla:font/archer/trapper/crow.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_summoner_snakes": {
+            "path": "wynnilla:font/archer/trapper/snake.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_summoner_hounds": {
+            "path": "wynnilla:font/archer/trapper/hound.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_devitalize": {
+            "path": "wynnilla:font/mage/riftwalker/devitalize.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_dimensional_tear": {
+            "path": "wynnilla:font/mage/riftwalker/dimensional-tear.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_displacement": {
+            "path": "wynnilla:font/mage/riftwalker/displacement.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_rift_rupture": {
+            "path": "wynnilla:font/mage/riftwalker/rift-rupture.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_riftbound": {
+            "path": "wynnilla:font/mage/riftwalker/riftbound.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_chant_of_the_lunatic": {
+            "path": "wynnilla:font/shaman/ritualist/chant-of-the-lunatic.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_chant_of_the_fanatic": {
+            "path": "wynnilla:font/shaman/ritualist/chant-of-the-fanatic.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_chant_of_the_heretic": {
+            "path": "wynnilla:font/shaman/ritualist/chant-of-the-heretic.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "bar_bg_corrupted": {
+            "path": "wynnilla:font/warrior/fallen/corrupted-bg.png",
+            "height": 20,
+            "chars": [1, 2]
+        },
+        "bar_corrupted": {
+            "path": "wynnilla:font/warrior/fallen/corrupted.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_holy_power": {
+            "path": "wynnilla:font/warrior/paladin/holy-power-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_holy_power": {
+            "path": "wynnilla:font/warrior/paladin/holy-power.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_focus": {
+            "path": "wynnilla:font/archer/sharpshooter/focus-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_focus": {
+            "path": "wynnilla:font/archer/sharpshooter/focus.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_frenzy": {
+            "path": "wynnilla:font/archer/boltslinger/frenzy-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_frenzy": {
+            "path": "wynnilla:font/archer/boltslinger/frenzy.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_blood_pool": {
+            "path": "wynnilla:font/shaman/acolyte/blood-pool-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_blood_pool": {
+            "path": "wynnilla:font/shaman/acolyte/blood-pool.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_mana_bank": {
+            "path": "wynnilla:font/mage/arcanist/mana-bank-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_mana_bank": {
+            "path": "wynnilla:font/mage/arcanist/mana-bank.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_ophanim": {
+            "path": "wynnilla:font/mage/light_bender/ophanim-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_ophanim": {
+            "path": "wynnilla:font/mage/light_bender/ophanim.png",
+            "height": 6,
+            "chars": [5, 1]
+        },
+        "bar_bg_commander": {
+            "path": "wynnilla:font/shaman/summoner/commander-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_commander": {
+            "path": "wynnilla:font/shaman/summoner/commander.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "center_fill_discombobulated": {
+            "path": "wynnilla:font/warrior/battlemonk/discombobulated.png",
+            "height": 27,
+            "chars": [3, 1]
+        },
+        "center_surround_harmony": {
+            "path": "wynnilla:font/warrior/battlemonk/harmony.png",
+            "height": 27,
+            "chars": [6, 1]
+        },
+        "center_fill_distortion": {
+            "path": "wynnilla:font/mage/riftwalker/distortion.png",
+            "height": 27,
+            "chars": [8, 1]
+        },
+        "center_surround_time_dilated": {
+            "path": "wynnilla:font/mage/riftwalker/time-dilated.png",
+            "height": 27,
+            "chars": [21, 1]
+        },
+        "center_fill_mask": {
+            "path": "wynnilla:font/shaman/ritualist/mask.png",
+            "height": 27,
+            "chars": [5, 1]
+        },
+        "center_surround_awakened": {
+            "path": "wynnilla:font/shaman/ritualist/awakened.png",
+            "height": 27,
+            "chars": [21, 1]
+        },
+        "center_surround_awakened_lunatic": {
+            "path": "wynnilla:font/shaman/ritualist/awakened-lunatic.png",
+            "height": 27,
+            "chars": [21, 1]
+        },
+        "center_surround_awakened_fanatic": {
+            "path": "wynnilla:font/shaman/ritualist/awakened-fanatic.png",
+            "height": 27,
+            "chars": [21, 1]
+        },
+        "center_surround_awakened_heretic": {
+            "path": "wynnilla:font/shaman/ritualist/awakened-heretic.png",
+            "height": 27,
+            "chars": [21, 1]
+        },
+        "sidebar_mantle_of_the_bovemists": {
+            "path": "wynnilla:font/warrior/paladin/mantle-of-the-bovemists.png",
+            "height": 41,
+            "chars": [1, 1]
         }
     }
 }

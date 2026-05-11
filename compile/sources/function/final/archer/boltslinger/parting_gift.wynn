@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Parting|Gift"), int(add(value(status_effect_duration("Parting|Gift")); 1)), widget_square_parting_gift)}

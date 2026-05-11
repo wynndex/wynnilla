@@ -1,0 +1,4 @@
+offset
+{template/bar/capped/right(capped_focus, bar_bg_focus, bar_focus, "Focus", 25)};
+{template/bar/capped/indicator/right(capped_focus, 2)};
+{template/bar/capped/indicator/right(capped_focus, 5)}

@@ -1,0 +1,21 @@
+active_condition active_value texture
+if({:active_condition};
+    concat_st(
+        {${:texture}@1^{:offset}};
+        {$pan@-14};
+        if(eq(mod(ticks; 2); 0);
+            {$widget_hex_active@0^{:offset+-1}};
+            {$widget_hex_active@1^{:offset+-1}}
+        );
+        {$pan@-14};
+        {$pan@6};
+        {text/widget/prefix({:active_value})};
+        {text/widget/content/hex({:active_value})};
+        {text/widget/suffix({:active_value})};
+        {$pan@-6}
+    );
+    concat_st(
+        {${:texture}@0^{:offset}};
+        {$pan@-13}
+    )
+)

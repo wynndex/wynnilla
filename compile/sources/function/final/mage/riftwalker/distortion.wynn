@@ -1,0 +1,3 @@
+offset
+{template/index_texture(int(div(add(current_distortion; 49); 50)), 7, center_fill_distortion, 24)};
+if(eq(current_distortion; 0); {$pan@0}; concat_st({template/center/text(current_distortion)}))

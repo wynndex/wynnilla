@@ -1,0 +1,2 @@
+offset
+{template/sidebar/cooldown(status_effect_active("Shield"), int(add(value(status_effect_duration("Shield")); 1)), sidebar_mantle_of_the_bovemists)}

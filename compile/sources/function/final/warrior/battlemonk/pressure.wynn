@@ -1,0 +1,5 @@
+offset
+{template/widget/hex/active(
+and(status_effect_active("Strength"); gte(value(status_effect_modifier("Strength")); 10)), 
+int(add(value(status_effect_duration("Strength")); 1)), 
+widget_hex_pressure_strength)}

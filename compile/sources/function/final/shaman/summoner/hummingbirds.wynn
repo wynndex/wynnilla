@@ -1,0 +1,16 @@
+offset
+if(hummingbirds_state;
+    concat_st(
+        {$widget_square_hummingbirds@1^{:offset}};
+        {$pan@-14};
+        if(eq(mod(ticks; 2); 0);
+            {$widget_square_active@0^{:offset+-1}};
+            {$widget_square_active@1^{:offset+-1}}
+        );
+        {$pan@-14}
+    );
+    concat_st(
+        {$widget_square_hummingbirds@0^{:offset}};
+        {$pan@-13}
+    )
+)

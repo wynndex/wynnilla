@@ -1,0 +1,5 @@
+offset
+{template/widget/square/active(
+status_effect_active("Freezing|Sigil"), 
+int(add(value(status_effect_duration("Freezing|Sigil")); 1)), 
+widget_square_freezing_sigil)}

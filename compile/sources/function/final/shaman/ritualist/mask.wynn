@@ -1,0 +1,15 @@
+offset
+if(string_contains(shaman_mask(false;true); "A");
+    {$center_fill_mask@4^{:offset}};
+    if(string_contains(shaman_mask(false;true); "H");
+        {$center_fill_mask@3^{:offset}};
+        if(string_contains(shaman_mask(false;true); "F");
+            {$center_fill_mask@2^{:offset}};
+            if(string_contains(shaman_mask(false;true); "L");
+                {$center_fill_mask@1^{:offset}};
+                {$center_fill_mask@0^{:offset}}
+            )
+        )
+    )
+);
+{$pan@-25}

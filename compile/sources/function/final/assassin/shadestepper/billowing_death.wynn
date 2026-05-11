@@ -1,0 +1,2 @@
+offset
+{template/widget/square/cooldown(status_effect_active("Billowing|Death"), int(add(value(status_effect_duration("Billowing|Death")); 1)), widget_square_billowing_death)}

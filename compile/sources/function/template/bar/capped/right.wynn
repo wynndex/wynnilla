@@ -1,0 +1,22 @@
+capped_target bg bar default default_width
+{${:bg}^{:offset}};
+{$pan@-73};
+if(neq(cap({:capped_target}); 0);
+    concat_st(
+        {$pan@5};
+        {template/bar/capped/fill/right({:capped_target}, {:bar})};
+        {$pan@-62};
+        {$pan@36};
+        {text/bar/capped/prefix({:capped_target})};
+        {text/bar/capped/content({:capped_target})};
+        {text/bar/capped/suffix({:capped_target})};
+        {$pan@-36}
+    );
+    concat_st(
+        {$pan@36};
+        {text/bar/static/prefix({:default_width})};
+        {text/bar/static/content({:default})};
+        {text/bar/static/suffix({:default_width})};
+        {$pan@-36}
+    )
+)

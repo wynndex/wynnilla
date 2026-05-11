@@ -1,6 +1,6 @@
 value
 styled_text(from_codepoint(add(
-    {$pan.V@0};
+    {$pan.V@-1};
     if(gt({:value}; 9); if(gt({:value}; 99); -14; -9); -4);
     if(eq(modulo({:value}; 10); 1); 1; 0);
     if(eq(modulo(int(div({:value}; 10)); 10); 1); 1; 0);

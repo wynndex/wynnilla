@@ -1,0 +1,17 @@
+[
+    {
+        "target": "final/warrior/fallen/corrupted",
+        "x": 0,
+        "y": 33
+    },
+    {
+        "target": "final/warrior/fallen/boiling_blood",
+        "x": 2,
+        "y": 20
+    },
+    {
+        "target": "final/warrior/fallen/armour_breaker",
+        "x": 16,
+        "y": 20
+    }
+]
