@@ -333,6 +333,43 @@ function create_service_dom(service) {
             }
             preview_guide_dom.addEventListener("mouseleave", remove_preview_callback);
         });
+        preview_guide_dom.addEventListener("click", async () => {
+            const tab = window.open();
+            
+            const html_content = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>${service["title"]} Guide</title>
+                    <style>
+                        body {
+                            background: #222222;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                        }
+                        img {
+                            width: 90%;
+                            image-rendering: -webkit-optimize-contrast;
+                            image-rendering: crisp-edges;
+                            image-rendering: pixelated;
+                            border-radius: 15px;
+                            box-shadow: 0px 20px 40px rgba(0,0,0,0.6);
+                        }
+                    </style>
+                    <link rel="icon" type="image/x-icon" href="favicon.ico">
+                </head>
+                <body>
+                    <img src="guide/${service["preview_path"]}.png" alt="Guide">
+                </body>
+                </html>
+            `;
+            
+            tab.document.write(html_content);
+            tab.document.close();
+        });
     }
     service_dom.appendChild(preview_guide_dom);
 
