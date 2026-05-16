@@ -1,0 +1,12 @@
+prefix value suffix
+with_font(
+    styled_text(regex_replace(
+        concat(
+            {:prefix};
+            str({:value});
+            {:suffix}
+        );
+        "(?<=.)(?!$)"; from_codepoint(4096)
+    ));
+    "wynnilla:widget/offset_{:offset+2}"
+)

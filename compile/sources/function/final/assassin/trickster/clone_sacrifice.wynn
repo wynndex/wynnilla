@@ -1,0 +1,5 @@
+offset
+{template/widget/hex/active(
+status_effect_active("Clone|Sacrifice"), 
+int(add(value(status_effect_duration("Clone|Sacrifice")); 1)), 
+widget_hex_clone_sacrifice)}

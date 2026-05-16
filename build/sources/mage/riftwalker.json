@@ -2,36 +2,36 @@
     {
         "target": "final/mage/riftwalker/distortion",
         "x": 13,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/riftwalker/time_dilated",
         "x": 13,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/riftwalker/dimensional_tear",
         "x": 0,
-        "y": 25
+        "y": 28
     },
     {
         "target": "final/mage/riftwalker/devitalize",
-        "x": 5,
-        "y": 12
+        "x": 4,
+        "y": 14
     },
     {
         "target": "final/mage/riftwalker/riftbound",
         "x": 19,
-        "y": 6
+        "y": 7
     },
     {
         "target": "final/mage/riftwalker/rift_rupture",
-        "x": 33,
-        "y": 12
+        "x": 34,
+        "y": 14
     },
     {
         "target": "final/mage/riftwalker/displacement",
         "x": 38,
-        "y": 25
+        "y": 28
     }
 ]

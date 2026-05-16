@@ -1,2 +1,2 @@
 offset
-{template/widget/square/active_with_condition(status_effect_active("Buried|Light"), int(add(value(status_effect_duration("Buried|Light")); 1)), gte(current(capped_holy_power); 25), widget_square_buried_light)}
+{template/widget/square/active(status_effect_active("Buried|Light"), int(add(value(status_effect_duration("Buried|Light")); 1)), widget_square_buried_light)}

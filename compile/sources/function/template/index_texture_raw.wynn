@@ -1,0 +1,6 @@
+index max texture width
+styled_text(from_codepoint(add(
+    {:texture};
+    min({:index}; {:max})
+)));
+{$pan@-{:width+1}}

@@ -1,2 +1,2 @@
 offset
-{template/widget/square/active(status_effect_active("Aerial Ace"), int(add(value(status_effect_duration("Aerial Ace")); 1)), widget_square_aerial_ace)}
+{template/widget/square/active(status_effect_active("Aerial|Ace"), int(add(value(status_effect_duration("Aerial|Ace")); 1)), widget_square_aerial_ace)}

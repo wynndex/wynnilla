@@ -1,0 +1,42 @@
+[
+    {
+        "target": "final/assassin/trickster/tricks",
+        "x": 13,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/trickster/mirror_clones",
+        "x": 13,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/trickster/bamboozle",
+        "x": 0,
+        "y": 33
+    },
+    {
+        "target": "final/assassin/trickster/mirror_image",
+        "x": 0,
+        "y": 19
+    },
+    {
+        "target": "final/assassin/trickster/clone_sacrifice",
+        "x": 12,
+        "y": 10
+    },
+    {
+        "target": "final/assassin/trickster/mirage",
+        "x": 26,
+        "y": 10
+    },
+    {
+        "target": "final/assassin/trickster/shadow_projection",
+        "x": 38,
+        "y": 19
+    },
+    {
+        "target": "final/assassin/trickster/deflagrate",
+        "x": 38,
+        "y": 33
+    }
+]

@@ -10,7 +10,7 @@ FONTS_DIR = "compile/sources/font/"
 FONTS_DEST_DIR = "pack/Wynnilla UI/assets/wynnilla/font/"
 FUNCTIONS_DEST_DIR = "generated/"
 FONT_TEMPLATE = "compile/sources/template/font.json"
-SPLAY_DEPTH = 140
+SPLAY_DEPTH = 100
 
 global_character_map = {}
 global_function_map = {}
@@ -161,7 +161,7 @@ def parse_curly_expressions(literal, function_map, argument_pool) -> str:
                             output.append(f"{char_id}")
                     else:
                         # output.append(f"styled_text(\"{chr(char_id)}\")")
-                        output.append(f"styled_text(from_codepoint({char_id}))")
+                        output.append(f"st(from_codepoint({char_id}))")
                 else:
                     function_call_name = expval[0:expval.index("(")]
                     function_call_args = expval[expval.index("(")+1:-1].split(", ")

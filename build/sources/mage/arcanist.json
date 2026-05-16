@@ -2,21 +2,21 @@
     {
         "target": "final/mage/arcanist/mana_bank",
         "x": 0,
-        "y": 33
+        "y": 34
     },
     {
         "target": "final/mage/arcanist/judrajim",
         "x": 30,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/arcanist/arcane_speed",
         "x": 44,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/arcanist/burning_sigil",
         "x": 58,
-        "y": 20
+        "y": 21
     }
 ]

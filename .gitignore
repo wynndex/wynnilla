@@ -1,10 +1,12 @@
 .vscode
 .venv
+.idea
 generated/resource
 build/script.sh
 */__pycache__/*
 misc/*
 pack/Wynnilla UI/assets/wynnilla/font/*
+pack/Wynnilla UI.zip
 generated/*
 compile/sources/old/*
 *.psd

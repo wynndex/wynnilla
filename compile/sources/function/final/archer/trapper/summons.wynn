@@ -1,7 +1,7 @@
 offset
 {$center_darkened^{:offset}};
 {$pan@-19};
-{template/widget/hex/counter_with_offset(crow_count, widget_hex_summoner_crows, 0)};
+{template/widget/hex/counter_with_offset(crow_count, widget_hex_summoner_crows, 1)};
 {$pan@6};
 {template/widget/hex/counter_with_offset(hounds_time_left, widget_hex_summoner_hounds, 11)};
 {$pan@-12};

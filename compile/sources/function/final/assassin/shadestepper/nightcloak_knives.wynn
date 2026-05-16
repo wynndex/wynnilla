@@ -1,0 +1,5 @@
+offset
+{$pan@11};
+{template/widget/square/counter/decorated/deluxe(or(status_effect_active("Nightcloak|Knife");status_effect_active("Nightcloak|Knives")), "", int(max(value(status_effect_modifier("Nightcloak|Knife")); value(status_effect_modifier("Nightcloak|Knives")))), "|Knives", 31)};
+{$pan@-11};
+{template/widget/square/active(or(status_effect_active("Nightcloak|Knife");status_effect_active("Nightcloak|Knives")), int(add(max(value(status_effect_duration("Nightcloak|Knife")); value(status_effect_duration("Nightcloak|Knives"))); 1)), widget_square_nightcloak_knives)}

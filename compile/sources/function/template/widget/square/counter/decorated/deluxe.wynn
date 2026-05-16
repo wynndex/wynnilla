@@ -1,0 +1,13 @@
+condition prefix value suffix value_width
+{$widget_square_counter_deluxe^{:offset}};
+{$pan@-44};
+if({:condition};
+    concat_st(
+        {$pan@22};
+        {text/widget/decorated/prefix({:value}, {:value_width})};
+        {text/widget/decorated/content({:prefix}, {:value}, {:suffix})};
+        {text/widget/decorated/suffix({:value}, {:value_width})};
+        {$pan@-22}
+    );
+    {$pan@0}
+)

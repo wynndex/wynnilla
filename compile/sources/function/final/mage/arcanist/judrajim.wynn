@@ -1,2 +1,2 @@
 offset
-{template/widget/square/cooldown_with_condition(status_effect_active("Judrajim"), int(add(value(status_effect_duration("Judrajim")); 1)), gte(current(capped_mana_bank); 140), widget_square_judrajim)}
+{template/widget/square/cooldown(status_effect_active("Judrajim"), int(add(value(status_effect_duration("Judrajim")); 1)), widget_square_judrajim)}

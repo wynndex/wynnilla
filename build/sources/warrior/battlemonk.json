@@ -2,16 +2,16 @@
     {
         "target": "final/warrior/battlemonk/discombobulated",
         "x": 0,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/warrior/battlemonk/harmony",
         "x": 0,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/warrior/battlemonk/pressure",
         "x": 6,
-        "y": 6
+        "y": 7
     }
 ]

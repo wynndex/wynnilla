@@ -1,0 +1,5 @@
+offset
+if(commander_activated;
+    concat_st({template/bar/capped/left(if(eq(commander_duration; 0); capped(0; 0); capped(commander_duration; 30)), bar_bg_commander@1, bar_commander_active, "Commander", 47)});
+    concat_st({template/bar/capped/left(if(eq(commander_duration; 0); capped(0; 0); capped(commander_duration; 30)), bar_bg_commander@0, bar_commander, "Commander", 47)})
+)

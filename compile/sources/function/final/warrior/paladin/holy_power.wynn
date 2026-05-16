@@ -1,3 +1,4 @@
 offset
 {template/bar/capped/right(capped_holy_power, bar_bg_holy_power, bar_holy_power, "Holy|Power", 47)};
+{template/bar/capped/indicator/right(capped_holy_power, if(and(is_aspect_equipped("Paladin's|Embodiment|of|Undying|Determination"); gte(aspect_tier("Paladin's|Embodiment|of|Undying|Determination"); 2)); 20; 25))};
 {template/bar/capped/indicator/right(capped_holy_power, 25)}

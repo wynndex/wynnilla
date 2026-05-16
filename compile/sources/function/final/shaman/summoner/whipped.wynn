@@ -1,5 +1,5 @@
 offset
 {$widget_square_whipped^{:offset}};
 {$pan@-2};
-{template/widget/square/counter/short(gt(debuffs_in_radius_value(32.0; "Whipped"); 0), debuffs_in_radius_value(32.0; "Whipped"))};
+{template/widget/square/counter/long(gt(debuffs_in_radius_value(32.0; "Whipped"); 0), debuffs_in_radius_value(32.0; "Whipped"))};
 {$pan@-11}

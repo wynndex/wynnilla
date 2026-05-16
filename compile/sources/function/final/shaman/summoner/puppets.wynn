@@ -1,0 +1,5 @@
+offset
+{$widget_square_puppets^{:offset}};
+{$pan@-2};
+{template/widget/square/counter/short(gt(puppet_count; 0), puppet_count)};
+{$pan@-11}

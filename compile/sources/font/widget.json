@@ -7,6 +7,11 @@
             "function": "static_character",
             "character": 4096,
             "value": -1
+        },
+        "space": {
+            "function": "static_character",
+            "character": 32,
+            "value": 4
         }
     },
     "textures": {
@@ -14,7 +19,15 @@
             "path": "wynnilla:font/text/widget.png",
             "function": "override",
             "height": 8,
-            "chars": ["0123456789"]
+            "chars": [
+                "0123456789",
+                "ABCDEFGHIJ",
+                "KLMNOPQRST",
+                "UVWXYZabcd",
+                "efghijklmn",
+                "opqrstuvwx",
+                "yz/%@\u0000\u0000\u0000\u0000\u0000"
+            ]
         }
     }
 }

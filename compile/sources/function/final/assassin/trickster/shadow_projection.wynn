@@ -1,0 +1,5 @@
+offset
+{template/widget/hex/active(
+status_effect_active("Shadow|Projection"), 
+int(add(value(status_effect_duration("Shadow|Projection")); 1)), 
+widget_hex_shadow_projection)}

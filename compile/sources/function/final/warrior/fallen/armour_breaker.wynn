@@ -1,8 +1,7 @@
 offset
-{template/widget/square/cooldown_and_active_with_condition(
+{template/widget/square/cooldown_and_active(
 status_effect_active("Armour|Breaker"), 
 int(add(value(status_effect_duration("Armour|Breaker")); 1)), 
 and(status_effect_active("Armour|Breaker"); status_effect_active("Strength"); gte(value(status_effect_modifier("Strength")); 30)), 
 int(add(value(status_effect_duration("Strength")); 1)), 
-gte(current(capped_corrupted); 40), 
 widget_square_armour_breaker)}

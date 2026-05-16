@@ -1,0 +1,17 @@
+[
+    {
+        "target": "assassin/shadestepper.json",
+        "x": 16,
+        "y": 0
+    },
+    {
+        "target": "assassin/trickster.json",
+        "x": 91,
+        "y": 0
+    },
+    {
+        "target": "assassin/acrobat.json",
+        "x": 144,
+        "y": 0
+    }
+]

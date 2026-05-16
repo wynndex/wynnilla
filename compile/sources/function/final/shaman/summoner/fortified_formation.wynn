@@ -2,6 +2,6 @@ offset
 {template/widget/square/cooldown_and_active(
 status_effect_active("Fortified|Formation"), 
 int(add(value(status_effect_duration("Fortified|Formation")); 1)), 
-and(status_effect_active("Resistance"); gte(value(status_effect_modifier("Resistance")); 50)), 
+and(status_effect_active("Fortified|Formation"); status_effect_active("Resistance"); gte(value(status_effect_modifier("Resistance")); 50)), 
 int(add(value(status_effect_duration("Resistance")); 1)), 
 widget_square_fortified_formation)}

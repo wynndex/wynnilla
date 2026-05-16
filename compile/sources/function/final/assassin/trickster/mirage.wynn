@@ -1,0 +1,5 @@
+offset
+{template/widget/hex/cooldown(
+status_effect_active("Mirage"), 
+int(add(value(status_effect_duration("Mirage")); 1)), 
+widget_hex_mirage)}

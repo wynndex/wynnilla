@@ -9,7 +9,7 @@ if({:cooldown_condition};
         {text/sidebar/suffix({:cooldown_value})};
         {$pan@-4};
         {text/sidebar/content/cooldown_icon()};
-        {$pan@-12}
+        {$pan@-13}
     );
     concat_st(
         {${:texture}^{:offset}};

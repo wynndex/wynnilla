@@ -1,8 +1,7 @@
 offset
-{template/widget/hex/cooldown_and_active_with_condition(
+{template/widget/hex/cooldown_and_active(
 status_effect_active("Riftbound"), 
 int(add(value(status_effect_duration("Riftbound")); 1)), 
-gt(value(status_effect_duration("Riftbound")); if(is_aspect_equipped("Riftwalker's|Embodiment|of|Reality|Alteration"); 11; 13)), 
-int(add(value(status_effect_duration("Riftbound")); if(is_aspect_equipped("Riftwalker's|Embodiment|of|Reality|Alteration"); -11; -13))), 
-status_effect_active("Dimensional|Tear"), 
+gt(value(status_effect_duration("Riftbound")); if(and(is_aspect_equipped("Riftwalker's|Embodiment|of|Reality|Alteration"); gte(aspect_tier("Riftwalker's|Embodiment|of|Reality|Alteration"); 2)); 11; 13)), 
+int(add(value(status_effect_duration("Riftbound")); if(and(is_aspect_equipped("Riftwalker's|Embodiment|of|Reality|Alteration"); gte(aspect_tier("Riftwalker's|Embodiment|of|Reality|Alteration"); 2)); -11; -13))), 
 widget_hex_riftbound)}

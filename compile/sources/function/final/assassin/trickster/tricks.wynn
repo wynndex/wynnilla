@@ -1,0 +1,3 @@
+offset
+{template/index_texture(int(div(add(debuffs_in_radius_value(32.0; "Trick"); 14); 15)), 3, center_fill_tricks, 24)};
+if(eq(debuffs_in_radius_value(32.0; "Trick"); 0); {$pan@0}; concat_st({template/center/text(int(debuffs_in_radius_value(32.0; "Trick")))}))

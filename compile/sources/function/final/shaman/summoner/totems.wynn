@@ -1,41 +1,53 @@
 offset
-{$sidebar^{:offset}};
-{$pan@-16};
-{$pan@7};
-if(eq(shaman_totem_time_left(1); 0);
-    {$pan@0};
+if(or(
+    neq(shaman_totem_time_left(1); 0);
+    neq(shaman_totem_time_left(2); 0);
+    neq(shaman_totem_time_left(3); 0);
+    neq(shaman_totem_time_left(4); 0));
     concat_st(
-        {text/sidebar/prefix(shaman_totem_time_left(1))};
-        {text/sidebar/content/offset(shaman_totem_time_left(1), 3)};
-        {text/sidebar/suffix(shaman_totem_time_left(1))};
-        {$pan@-1}
-    )
-);
-if(eq(shaman_totem_time_left(2); 0);
-    {$pan@0};
+        {$sidebar^{:offset}};
+        {$pan@-16};
+        {$pan@7};
+        if(eq(shaman_totem_time_left(1); 0);
+            {$pan@0};
+            concat_st(
+                {text/sidebar/prefix(shaman_totem_time_left(1))};
+                {text/sidebar/content/offset(shaman_totem_time_left(1), 3)};
+                {text/sidebar/suffix(shaman_totem_time_left(1))};
+                {$pan@-1}
+            )
+        );
+        if(eq(shaman_totem_time_left(2); 0);
+            {$pan@0};
+            concat_st(
+                {text/sidebar/prefix(shaman_totem_time_left(2))};
+                {text/sidebar/content/offset(shaman_totem_time_left(2), 12)};
+                {text/sidebar/suffix(shaman_totem_time_left(2))};
+                {$pan@-1}
+            )
+        );
+        if(eq(shaman_totem_time_left(3); 0);
+            {$pan@0};
+            concat_st(
+                {text/sidebar/prefix(shaman_totem_time_left(3))};
+                {text/sidebar/content/offset(shaman_totem_time_left(3), 21)};
+                {text/sidebar/suffix(shaman_totem_time_left(3))};
+                {$pan@-1}
+            )
+        );
+        if(eq(shaman_totem_time_left(4); 0);
+            {$pan@0};
+            concat_st(
+                {text/sidebar/prefix(shaman_totem_time_left(4))};
+                {text/sidebar/content/offset(shaman_totem_time_left(4), 30)};
+                {text/sidebar/suffix(shaman_totem_time_left(4))};
+                {$pan@-1}
+            )
+        );
+        {$pan@-7}
+    );
     concat_st(
-        {text/sidebar/prefix(shaman_totem_time_left(2))};
-        {text/sidebar/content/offset(shaman_totem_time_left(2), 12)};
-        {text/sidebar/suffix(shaman_totem_time_left(2))};
-        {$pan@-1}
+        {$sidebar_totems^{:offset}};
+        {$pan@-16}
     )
-);
-if(eq(shaman_totem_time_left(3); 0);
-    {$pan@0};
-    concat_st(
-        {text/sidebar/prefix(shaman_totem_time_left(3))};
-        {text/sidebar/content/offset(shaman_totem_time_left(3), 21)};
-        {text/sidebar/suffix(shaman_totem_time_left(3))};
-        {$pan@-1}
-    )
-);
-if(eq(shaman_totem_time_left(4); 0);
-    {$pan@0};
-    concat_st(
-        {text/sidebar/prefix(shaman_totem_time_left(4))};
-        {text/sidebar/content/offset(shaman_totem_time_left(4), 30)};
-        {text/sidebar/suffix(shaman_totem_time_left(4))};
-        {$pan@-1}
-    )
-);
-{$pan@-7}
+)

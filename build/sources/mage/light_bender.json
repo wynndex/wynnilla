@@ -2,31 +2,31 @@
     {
         "target": "final/mage/light_bender/ophanim",
         "x": 0,
-        "y": 33
+        "y": 34
     },
     {
         "target": "final/mage/light_bender/purification",
         "x": 2,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/light_bender/fortitude",
         "x": 16,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/light_bender/freezing_sigil",
         "x": 30,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/light_bender/sunflare",
         "x": 44,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/mage/light_bender/crystallized",
         "x": 9,
-        "y": 7
+        "y": 8
     }
 ]

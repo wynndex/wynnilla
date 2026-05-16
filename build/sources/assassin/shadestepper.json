@@ -1,0 +1,32 @@
+[
+    {
+        "target": "final/assassin/shadestepper/vanish",
+        "x": 0,
+        "y": 34
+    },
+    {
+        "target": "final/assassin/shadestepper/violent_vortex",
+        "x": 2,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/shadestepper/shadow_dance",
+        "x": 16,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/shadestepper/billowing_death",
+        "x": 30,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/shadestepper/marked",
+        "x": 44,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/shadestepper/nightcloak_knives",
+        "x": 9,
+        "y": 8
+    }
+]

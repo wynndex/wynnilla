@@ -1,0 +1,221 @@
+:root {
+  --background-color: #222222;
+  --background-translucent: #97a2a322;
+  --background-translucent-light: #bac6c722;
+  --background-translucent-light-yellow: #e2f08866;
+  --background-translucent-lighter: #bac6c733;
+  --shadow-color: #ffffff40;
+
+  --text-yellow: #e2f088ff;
+
+  --site-padding: 16px;
+}
+
+* {
+    font-family: 'WynnWynncraft';
+    color: white;
+    text-shadow: 3px 3px 0px var(--shadow-color);
+    line-height: 0.8;
+}
+
+.logo {
+  width: 396px;
+
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  margin-bottom: 16px;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - var(--site-padding) - var(--site-padding));
+  height: calc(100% - var(--site-padding) - var(--site-padding));
+  overflow: scroll;
+
+  margin: 0;
+  padding: var(--site-padding);
+
+  background-color: var(--background-color);
+
+  transition: 0.3s;
+}
+
+.content {
+  width: 60%;
+
+  margin-left: calc(var(--site-padding) * 2);
+  margin-bottom: var(--site-padding);
+
+  font-size: 38px;
+  text-shadow: 2.45px 2.45px 0px var(--shadow-color);
+}
+
+dull {
+  font-size: 28px;
+  color: #999999ff;
+  text-shadow: 2.45px 2.45px 0px #ffffff20;
+}
+
+.full-width {
+  width: calc(90% - var(--site-padding) * 2);
+}
+
+.header {
+  background-color: var(--background-translucent);
+  padding-left: 16px;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  border: 2px solid #ffffff66;
+  border-radius: 4px;
+
+  font-size: 50px;
+}
+
+.issues {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 8px;
+  margin-left: 16px;
+
+  width: calc(100% - 32px - 8px);
+
+  font-size: 34px;
+
+  > div {
+    color: var(--text-yellow);
+  }
+}
+
+.issues:not(:empty) {
+  padding-bottom: 10px;
+  border: 1px solid var(--background-translucent-light-yellow);
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: calc(var(--site-padding) * 2);
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  border: 1px solid var(--background-translucent-light);
+  /* background-color: var(--background-translucent); */
+
+  padding-right: 8px;
+
+  > .button {
+    height: calc(100% - 16px);
+
+    background-color: var(--background-translucent);
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    padding-bottom: 8px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border: 2px solid var(--background-translucent-light);
+    border-radius: 0;
+
+    font-size: 28px;
+    cursor: pointer;
+    text-shadow: 1.75px 1.75px 0px var(--shadow-color);
+    transition: 0.2s;
+  }
+
+  > .button:disabled {
+    cursor: not-allowed;
+    color: var(--background-translucent-light);
+  }
+
+  > button:not(:disabled):hover {
+    background-color: var(--background-translucent-lighter);
+  }
+
+  > .button.icon {
+    aspect-ratio: 1;
+
+    font-size: 50px;
+  }
+
+  > .title {
+    flex: 1;
+
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+  }
+}
+
+.preview-container {
+  width: 40%;
+  position: absolute;
+}
+
+.preview {
+  /* width: 40%; */
+  width: 100%;
+
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  border: 1px solid white;
+}
+
+.visual {
+    border: 1px solid white;
+
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.tutorial-pair {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  > .content {
+    /* width: 50%; */
+  }
+
+  > .visual {
+    border: 1px solid white;
+
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+a {
+  color: rgb(154, 154, 255)
+}
+
+@font-face {
+  font-family: 'WynnWynncraft';
+  src: url('wynn-wynncraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

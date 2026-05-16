@@ -1,0 +1,10 @@
+offset
+{template/bar/static/left(bar_bg_momentum, neq(cap(momentum_percent); 0), "", momentum, "|Momentum", 46, "Grounded", 40)};
+if(eq(cap(momentum_percent); 0);
+    {$pan@0};
+    concat_st(
+        {$pan@5};
+        {template/bar/capped/fill/right(momentum_percent, bar_momentum)};
+        {$pan@-62}
+    )
+)

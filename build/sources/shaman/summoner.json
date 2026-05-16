@@ -5,7 +5,7 @@
         "y": 33
     },
     {
-        "target": "final/shaman/summoner/commander_and_puppets",
+        "target": "final/shaman/summoner/commander",
         "x": 16,
         "y": 33
     },
@@ -16,12 +16,17 @@
     },
     {
         "target": "final/shaman/summoner/hummingbirds",
-        "x": 46,
+        "x": 60,
         "y": 20
     },
     {
         "target": "final/shaman/summoner/fortified_formation",
-        "x": 60,
+        "x": 74,
         "y": 20
+    },
+    {
+        "target": "final/shaman/summoner/puppets",
+        "x": 25,
+        "y": 7
     }
 ]

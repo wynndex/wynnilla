@@ -87,6 +87,11 @@
             "height": 12,
             "chars": [1, 1]
         },
+        "widget_square_counter_deluxe": {
+            "path": "wynnilla:font/base/widget-square-counter-deluxe.png",
+            "height": 12,
+            "chars": [1, 1]
+        },
         "widget_square_boiling_blood": {
             "path": "wynnilla:font/warrior/fallen/boiling-blood.png",
             "height": 12,
@@ -97,13 +102,13 @@
             "height": 12,
             "chars": [2, 1]
         },
-        "widget_square_buried_light": {
-            "path": "wynnilla:font/warrior/paladin/buried-light.png",
+        "widget_square_cleansing_breeze": {
+            "path": "wynnilla:font/warrior/paladin/cleansing-breeze.png",
             "height": 12,
             "chars": [2, 1]
         },
-        "widget_square_cleansing_breeze": {
-            "path": "wynnilla:font/warrior/paladin/cleansing-breeze.png",
+        "widget_square_buried_light": {
+            "path": "wynnilla:font/warrior/paladin/buried-light.png",
             "height": 12,
             "chars": [2, 1]
         },
@@ -217,6 +222,46 @@
             "height": 12,
             "chars": [2, 1]
         },
+        "widget_square_puppets": {
+            "path": "wynnilla:font/shaman/summoner/puppets.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_aerial_ace": {
+            "path": "wynnilla:font/assassin/acrobat/aerial-ace.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_hop": {
+            "path": "wynnilla:font/assassin/acrobat/hop.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_billowing_death": {
+            "path": "wynnilla:font/assassin/shadestepper/billowing-death.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_marked": {
+            "path": "wynnilla:font/assassin/shadestepper/marked.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_nightcloak_knives": {
+            "path": "wynnilla:font/assassin/shadestepper/nightcloak-knives.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_shadow_dance": {
+            "path": "wynnilla:font/assassin/shadestepper/shadow-dance.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
+        "widget_square_violent_vortex": {
+            "path": "wynnilla:font/assassin/shadestepper/violent-vortex.png",
+            "height": 12,
+            "chars": [2, 1]
+        },
         "widget_hex_pressure_strength": {
             "path": "wynnilla:font/warrior/battlemonk/pressure-strength.png",
             "height": 13,
@@ -284,6 +329,41 @@
         },
         "widget_hex_chant_of_the_heretic": {
             "path": "wynnilla:font/shaman/ritualist/chant-of-the-heretic.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_bamboozle": {
+            "path": "wynnilla:font/assassin/trickster/bamboozle.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_mirror_image": {
+            "path": "wynnilla:font/assassin/trickster/mirror-image.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_clone_sacrifice": {
+            "path": "wynnilla:font/assassin/trickster/clone-sacrifice.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_mirage": {
+            "path": "wynnilla:font/assassin/trickster/mirage.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_shadow_projection": {
+            "path": "wynnilla:font/assassin/trickster/shadow-projection.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_enkindled": {
+            "path": "wynnilla:font/assassin/trickster/enkindled.png",
+            "height": 13,
+            "chars": [2, 1]
+        },
+        "widget_hex_drained": {
+            "path": "wynnilla:font/assassin/trickster/drained.png",
             "height": 13,
             "chars": [2, 1]
         },
@@ -360,10 +440,40 @@
         "bar_bg_commander": {
             "path": "wynnilla:font/shaman/summoner/commander-bg.png",
             "height": 20,
-            "chars": [1, 1]
+            "chars": [1, 2]
         },
         "bar_commander": {
             "path": "wynnilla:font/shaman/summoner/commander.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_commander_active": {
+            "path": "wynnilla:font/shaman/summoner/commander-active.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_momentum": {
+            "path": "wynnilla:font/assassin/acrobat/momentum-bg.png",
+            "height": 20,
+            "chars": [1, 1]
+        },
+        "bar_momentum": {
+            "path": "wynnilla:font/assassin/acrobat/momentum.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_bg_vanish": {
+            "path": "wynnilla:font/assassin/shadestepper/vanish-bg.png",
+            "height": 20,
+            "chars": [1, 2]
+        },
+        "bar_vanish": {
+            "path": "wynnilla:font/assassin/shadestepper/vanish.png",
+            "height": 8,
+            "chars": [9, 1]
+        },
+        "bar_vanish_cooldown": {
+            "path": "wynnilla:font/assassin/shadestepper/vanish-cooldown.png",
             "height": 8,
             "chars": [9, 1]
         },
@@ -392,6 +502,11 @@
             "height": 27,
             "chars": [5, 1]
         },
+        "center_fill_tricks": {
+            "path": "wynnilla:font/assassin/trickster/tricks.png",
+            "height": 27,
+            "chars": [4, 1]
+        },
         "center_surround_awakened": {
             "path": "wynnilla:font/shaman/ritualist/awakened.png",
             "height": 27,
@@ -412,8 +527,18 @@
             "height": 27,
             "chars": [21, 1]
         },
+        "center_surround_mirror_clones": {
+            "path": "wynnilla:font/assassin/trickster/mirror-clones.png",
+            "height": 27,
+            "chars": [8, 5]
+        },
         "sidebar_mantle_of_the_bovemists": {
             "path": "wynnilla:font/warrior/paladin/mantle-of-the-bovemists.png",
+            "height": 41,
+            "chars": [1, 1]
+        },
+        "sidebar_totems": {
+            "path": "wynnilla:font/shaman/summoner/totems.png",
             "height": 41,
             "chars": [1, 1]
         }

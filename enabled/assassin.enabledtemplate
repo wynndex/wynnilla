@@ -1,0 +1,1 @@
+and(eq_str(class(false;false);"Assassin"); not(has_no_gui))

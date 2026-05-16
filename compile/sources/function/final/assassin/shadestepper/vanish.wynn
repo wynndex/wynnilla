@@ -1,0 +1,40 @@
+offset
+if(or(status_effect_active("Vanish"); and(eq(minecraft_effect_duration("wither"); -1); status_effect_active("Shadow|Travel")));
+    {$bar_bg_vanish@1^{:offset}};
+    {$bar_bg_vanish@0^{:offset}}
+);
+{$pan@-73};
+if(or(status_effect_active("Vanish"); and(eq(minecraft_effect_duration("wither"); -1); status_effect_active("Shadow|Travel")));
+    concat_st(
+        {$pan@11};
+        {template/bar/capped/fill/left(capped(if(status_effect_active("Vanish"); add(value(status_effect_duration("Vanish")); 1); 5); 5), bar_vanish_cooldown)};
+        {$pan@-68};
+        {$pan@36};
+        {text/bar/cooldown/prefix(if(status_effect_active("Vanish"); int(add(value(status_effect_duration("Vanish")); 1)); 5))};
+        {text/bar/cooldown/content(if(status_effect_active("Vanish"); int(add(value(status_effect_duration("Vanish")); 1)); 5))};
+        {text/bar/cooldown/suffix(if(status_effect_active("Vanish"); int(add(value(status_effect_duration("Vanish")); 1)); 5))};
+        {$pan@-36}
+    );
+    if(neq(minecraft_effect_duration("wither"); -1);
+        concat_st(
+            {$pan@11};
+            {template/bar/capped/fill/left(capped(minecraft_effect_duration("wither"); 100), bar_vanish)};
+            {$pan@-68};
+            {$pan@36};
+            {text/bar/cooldown/prefix(int(add(div(minecraft_effect_duration("wither"); 20); 1)))};
+            {text/bar/cooldown/content(int(add(div(minecraft_effect_duration("wither"); 20); 1)))};
+            {text/bar/cooldown/suffix(int(add(div(minecraft_effect_duration("wither"); 20); 1)))};
+            {$pan@-36}
+        );
+        concat_st(
+            {$pan@11};
+            {template/bar/static/fill/left(bar_vanish)};
+            {$pan@-68};
+            {$pan@36};
+            {text/bar/static/prefix(56)};
+            {text/bar/static/content("Vanish|Ready")};
+            {text/bar/static/suffix(56)};
+            {$pan@-36}
+        )
+    )
+)

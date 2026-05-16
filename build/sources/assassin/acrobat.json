@@ -1,0 +1,17 @@
+[
+    {
+        "target": "final/assassin/acrobat/momentum",
+        "x": 0,
+        "y": 34
+    },
+    {
+        "target": "final/assassin/acrobat/aerial_ace",
+        "x": 44,
+        "y": 21
+    },
+    {
+        "target": "final/assassin/acrobat/hop",
+        "x": 58,
+        "y": 21
+    }
+]
