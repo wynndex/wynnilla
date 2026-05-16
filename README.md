@@ -2,7 +2,5 @@
 
 build:      has the python scripts which compile the functions/ui
 compile:    has the raw functions
-docs:       webpage
-enabled:    enabled templates
-generated:  generated result from script
+docs:       webpage + generated templates
 pack:       the actual texture pack

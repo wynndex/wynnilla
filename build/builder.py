@@ -6,7 +6,7 @@ import os
 import compiler
 
 BUILDERS_DIR = "build/sources/"
-INFO_BOXES_DEST_DIR = "generated/"
+INFO_BOXES_DEST_DIR = "docs/generated/"
 
 def do_builder():
     compiler.do_compiler()

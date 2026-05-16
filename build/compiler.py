@@ -8,7 +8,7 @@ import re as regex
 FUNCTIONS_DIR = "compile/sources/function/"
 FONTS_DIR = "compile/sources/font/"
 FONTS_DEST_DIR = "pack/Wynnilla UI/assets/wynnilla/font/"
-FUNCTIONS_DEST_DIR = "generated/"
+FUNCTIONS_DEST_DIR = "docs/generated/"
 FONT_TEMPLATE = "compile/sources/template/font.json"
 SPLAY_DEPTH = 100
 
