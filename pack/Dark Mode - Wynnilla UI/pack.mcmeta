@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "description": [
+            {"color":"aqua","text":"for WynnEdits Dark Theme"},
+            {"text":"\n"},
+            {"color":"gray","text":"Patch"},
+            {"color":"#579116","text":" for Wynnilla v:(May15)"}
+        ],
+        "max_format": [84, 0],
+        "min_format": [46, 0],
+        "pack_format": 75,
+        "supported_formats": {"max_inclusive": 84,"min_inclusive": 46}
+    }
+}

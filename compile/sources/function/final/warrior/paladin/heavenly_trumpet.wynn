@@ -1,2 +1,2 @@
 offset
-{template/widget/square/cooldown_with_condition(status_effect_active("Heavenly|Trumpet"), int(add(value(status_effect_duration("Heavenly|Trumpet")); 1)), gte(current(capped_holy_power); 25), widget_square_heavenly_trumpet)}
+{template/widget/square/cooldown(status_effect_active("Heavenly|Trumpet"), int(add(value(status_effect_duration("Heavenly|Trumpet")); 1)), widget_square_heavenly_trumpet)}
