@@ -5,8 +5,8 @@ generated/resource
 build/script.sh
 */__pycache__/*
 misc/*
-pack/Wynnilla UI/assets/wynnilla/font/*
-pack/Wynnilla UI.zip
+pack/*/assets/wynnilla/font/*
+pack/*.zip
 generated/*
 compile/sources/old/*
 *.psd

@@ -230,6 +230,10 @@ function create_service_dom(service) {
     text_box_content_dom.innerHTML = "Text Box<br>Content";
     text_box_content_dom.addEventListener("click", async () => {
         await copy_template_text(`generated/build/sources/${service["text_box_content_path"]}.infobox`);
+        text_box_content_dom.innerHTML = "Copied!";
+        setTimeout(() => {
+            text_box_content_dom.innerHTML = "Text Box<br>Content";
+        }, 4000);
     });
     service_dom.appendChild(text_box_content_dom);
 
@@ -238,6 +242,10 @@ function create_service_dom(service) {
     enabled_template_dom.innerHTML = "Enabled<br>Template";
     enabled_template_dom.addEventListener("click", async () => {
         await copy_template_text(`enabled/${service["enabled_path"]}.enabledtemplate`);
+        enabled_template_dom.innerHTML = "Copied!";
+        setTimeout(() => {
+            enabled_template_dom.innerHTML = "Text Box<br>Content";
+        }, 4000);
     });
     service_dom.appendChild(enabled_template_dom);
 
