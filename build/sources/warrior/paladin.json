@@ -5,9 +5,9 @@
         "y": 34
     },
     {
-        "target": "final/warrior/paladin/cleansing_breeze",
-        "x": 58,
-        "y": 21
+        "target": "final/warrior/paladin/provoke",
+        "x": 37,
+        "y": 8
     },
     {
         "target": "final/warrior/paladin/radiance",
@@ -30,9 +30,9 @@
         "y": 8
     },
     {
-        "target": "final/warrior/paladin/provoke",
-        "x": 37,
-        "y": 8
+        "target": "final/warrior/paladin/cleansing_breeze",
+        "x": 58,
+        "y": 21
     },
     {
         "target": "final/warrior/paladin/mantle_of_the_bovemists",

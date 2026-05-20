@@ -244,7 +244,7 @@ function create_service_dom(service) {
         await copy_template_text(`enabled/${service["enabled_path"]}.enabledtemplate`);
         enabled_template_dom.innerHTML = "Copied!";
         setTimeout(() => {
-            enabled_template_dom.innerHTML = "Text Box<br>Content";
+            enabled_template_dom.innerHTML = "Enabled<br>Template";
         }, 4000);
     });
     service_dom.appendChild(enabled_template_dom);

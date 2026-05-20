@@ -2,31 +2,31 @@
     {
         "target": "final/shaman/summoner/totems",
         "x": 0,
-        "y": 33
+        "y": 34
     },
     {
         "target": "final/shaman/summoner/commander",
         "x": 16,
-        "y": 33
+        "y": 34
     },
     {
         "target": "final/shaman/summoner/whipped",
         "x": 18,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/shaman/summoner/hummingbirds",
         "x": 60,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/shaman/summoner/fortified_formation",
         "x": 74,
-        "y": 20
+        "y": 21
     },
     {
         "target": "final/shaman/summoner/puppets",
         "x": 25,
-        "y": 7
+        "y": 8
     }
 ]
