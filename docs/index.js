@@ -74,8 +74,7 @@ let services = [
                 "enabled_path": "assassin",
                 "children": [],
                 "issues": [
-                    "Shurikens: Tracking currently impossible",
-                    "Judraijm (Unstable Debuff): Tracking to be added to Wynntils"
+                    "Shurikens: Tracking currently impossible"
                 ]
             }
         ],
@@ -111,7 +110,9 @@ let services = [
                 "preview_path": null,
                 "enabled_path": "mage",
                 "children": [],
-                "issues": []
+                "issues": [
+                    "Judraijm (Unstable Debuff): Tracking to be added to Wynntils"
+                ]
             }
         ],
         "issues": []
