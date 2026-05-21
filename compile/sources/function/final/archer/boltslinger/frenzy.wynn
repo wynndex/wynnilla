@@ -1,4 +1,4 @@
 offset
 {template/bar/capped/left(
-if(eq(value(status_effect_modifier("Frenzy")); 0); capped(0; 0); capped(int(value(status_effect_modifier("Frenzy"))); 60)), 
+if(eq(value(status_effect_modifier("Frenzy")); 0); capped(0; 0); capped(int(value(status_effect_modifier("Frenzy"))); if(is_aspect_equipped("Aspect|of|Undercrank"); if(eq(aspect_tier("Aspect|of|Undercrank"); 1); 70; if(eq(aspect_tier("Aspect|of|Undercrank"); 2); 75; 80)); 60)), 
 bar_bg_frenzy, bar_frenzy, "Frenzy", 30)}
