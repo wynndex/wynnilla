@@ -228,12 +228,12 @@ function create_service_dom(service) {
 
     let text_box_content_dom = document.createElement("button");
     text_box_content_dom.classList.add("button");
-    text_box_content_dom.innerHTML = "Text Box<br>Content";
+    text_box_content_dom.innerHTML = "Info Box<br>Content";
     text_box_content_dom.addEventListener("click", async () => {
         await copy_template_text(`generated/build/sources/${service["text_box_content_path"]}.infobox`);
         text_box_content_dom.innerHTML = "Copied!";
         setTimeout(() => {
-            text_box_content_dom.innerHTML = "Text Box<br>Content";
+            text_box_content_dom.innerHTML = "Info Box<br>Content";
         }, 4000);
     });
     service_dom.appendChild(text_box_content_dom);
