@@ -60,7 +60,18 @@
 dull {
   font-size: 28px;
   color: #999999ff;
-  text-shadow: 2.45px 2.45px 0px #ffffff20;
+  text-shadow: 1.95px 1.95px 0px #ffffff20;
+}
+
+.offset-left {
+  margin-left: 32px;
+}
+
+code {
+  background-color: var(--background-translucent-light);
+  padding: 4px;
+  padding-top: 0;
+  border: var(--background-translucent-light) solid 1px;
 }
 
 .full-width {

@@ -40,8 +40,6 @@
             <br>
             6. Click "Edit" on "Overlay Position" and move it to the right place, like in the example.
             <br>
-            <dull>Wynntils is a little buggy; If the position doesn't save properly when you close the game, play around with your settings and try to make the text aligned using shift+arrow keys to be in the same relative "ninth" as the top-left corner of the green bounding box is in, relative to the entire screen. I know that might sound confusing, but ask about it in my Wynntils discord thread if you need help.</dull>
-            <br>
             <video autoplay loop muted playsinline width="100%" class="visual">
                 <source src="tutorial/edit_position.webm" type="video/webm">
                 Your browser does not support the video tag.
@@ -60,6 +58,51 @@
         </div> -->
         <div class="content full-width">
             8. Save your changes
+        </div>
+        <div class="header">FAQ</div>
+        <div class="content full-width">
+            How do I make the overlay activate per class?
+            <div class="offset-left">
+            <dull>
+                Use this enabled template instead: <code>and(not(has_no_gui); eq_str(id, "MY_ID"))</code>
+                <br>
+                Replace MY_ID with the output from the function <code>/function test {id}</code>
+            </dull>
+            </div>
+            Loading into the game / reloading texture packs takes forever
+            <div class="offset-left">
+            <dull>
+                Sadly loading is slow right now, make sure to use <code>Auto Apply Resource Pack</code> in Wynntils to reduce resource pack reloading
+            </dull>
+            </div>
+            How do I hide the vanilla bossbars?
+            <div class="offset-left">
+            <dull>
+                1. Enable the Wynntils built-in overlay for what you want to hide
+                <br>
+                2. Make sure <code>Display Original Bar Data</code> is disabled
+                <br>
+                3. Type <code>false</code> into the built-in overlay's Enabled Template
+            </dull>
+            </div>
+            I installed the WynnEdits Dark Mode version but it isn't working
+            <div class="offset-left">
+            <dull>
+                You still need to use the basic Wynnilla resource pack, just layer the dark mode patch above it.
+            </dull>
+            </div>
+            It shows up as some kind of error / long string of code
+            <div class="offset-left">
+            <dull>
+                Update Wynntils
+            </dull>
+            </div>
+            My overlay keeps resetting its position
+            <div class="offset-left">
+            <dull>
+                Yeah, Wynntils is buggy. Just try messing around with different ways to line it up until it works.
+            </dull>
+            </div>
         </div>
         <div class="header">Available Infoboxes</div>
         <div class="service-list" id="service-list"></div>
