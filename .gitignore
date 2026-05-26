@@ -2,7 +2,7 @@
 .venv
 .idea
 generated/resource
-build/script.sh
+build/*.sh
 */__pycache__/*
 misc/*
 pack/*/assets/wynnilla/font/*
