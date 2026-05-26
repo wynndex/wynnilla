@@ -15,6 +15,9 @@ SPLAY_DEPTH = 100
 global_character_map = {}
 global_function_map = {}
 
+used_codepoints = []
+ui_template = {}
+
 class Logging: depth = 0
 
 def log(msg):
@@ -99,6 +102,28 @@ def compile_font(font_file: Path):
             with open(dest, "w+") as f:
                 json.dump(template, f, indent=2)
 
+        dest = os.path.join(FONTS_DEST_DIR, str(font_file).replace(FONTS_DIR, ""))
+        if dest.replace(FONTS_DEST_DIR,"").replace(".json","") == "ui":
+            global ui_template
+            ui_template = template
+
+def trim_font(font_file: Path):
+    with font_file.open("w") as handle:
+        i = 2
+        while i < len(ui_template["providers"]):
+            item = ui_template["providers"][i]
+            needed = False
+            for char in [char for word in item["chars"] for char in word]:
+                if ord(char) in used_codepoints:
+                    needed = True
+                    break
+            if not needed:
+                del ui_template["providers"][i]
+                i -= 1
+            i += 1
+
+        json.dump(ui_template, handle, indent=2)
+
 def echo_and_print(match):
     print(match.group(1))
     return match.group(1)
@@ -158,9 +183,15 @@ def parse_curly_expressions(literal, function_map, argument_pool) -> str:
                         char_id += texture_spec["offset"] * global_character_map["ui"][texture_spec["id"]][1]
                     if "mod" in texture_spec:
                         if texture_spec["mod"] == "V":
+                            for i in range(0, global_character_map["ui"][texture_spec["id"]][1] - 1):
+                                if "slot" in texture_spec:
+                                    used_codepoints.append(char_id - texture_spec["slot"] + i)
+                                else:
+                                    used_codepoints.append(char_id + i)
                             output.append(f"{char_id}")
                     else:
                         # output.append(f"styled_text(\"{chr(char_id)}\")")
+                        used_codepoints.append(char_id)
                         output.append(f"st(from_codepoint({char_id}))")
                 else:
                     function_call_name = expval[0:expval.index("(")]

@@ -2,11 +2,14 @@ from pathlib import Path
 import shutil
 import json
 import os
+import re
 
 import compiler
 
 BUILDERS_DIR = "build/sources/"
 INFO_BOXES_DEST_DIR = "docs/generated/"
+
+used_splayed_fonts = []
 
 def do_builder():
     compiler.do_compiler()
@@ -67,7 +70,26 @@ def do_builder():
 
         destination_path = Path(os.path.join(INFO_BOXES_DEST_DIR), str(file).replace("final", "").replace(".json",".infobox"))
         destination_path.parent.mkdir(parents=True, exist_ok=True)
-        destination_path.write_text(f"{{with_font(concat_st({"".join(output)[:-1].replace(" ","").replace("|", " ")});\"wynnilla:ui\")}}")
+        evaluated_output_string = "".join(output)[:-1].replace(" ","").replace("|", " ")
+        destination_path.write_text(f"{{with_font(concat_st({evaluated_output_string});\"wynnilla:ui\")}}")
+
+        pattern = r"wynnilla:.*?/offset_\d+"
+
+        matches = re.findall(pattern, evaluated_output_string)
+
+        used_splayed_fonts.extend(matches)
+
+def trim_splayed_fonts():
+    source_files = [f for f in list(Path("pack/Wynnilla UI/assets/wynnilla/font").rglob("*")) if f.is_file()]
+    for fileobj in source_files:
+        if fileobj.name == "ui.json":
+            continue
+        testing_name = f"wynnilla:{fileobj.parent.name}/{Path(fileobj.name)}".replace(".json","")
+        if testing_name not in used_splayed_fonts:
+            fileobj.unlink()
 
 if __name__ == "__main__":
     do_builder()
+
+    compiler.trim_font(Path("pack/Wynnilla UI/assets/wynnilla/font/ui.json"))
+    trim_splayed_fonts()
