@@ -12,7 +12,7 @@ let services = [
                 "enabled_path": "archer",
                 "children": [],
                 "issues": [
-                    "Guardian Angels: Tracking to be fixed by Wynntils"
+                    "Guardian Angels: To be added"
                 ]
             },
             {
@@ -37,7 +37,7 @@ let services = [
             }
         ],
         "issues": [
-            "Arrow Shield: Tracking to be fixed by Wynntils"
+            "Arrow Shield: Planned"
         ]
     },
     {
@@ -110,9 +110,7 @@ let services = [
                 "preview_path": null,
                 "enabled_path": "mage",
                 "children": [],
-                "issues": [
-                    "Judraijm (Unstable Debuff): Tracking to be added to Wynntils"
-                ]
+                "issues": []
             }
         ],
         "issues": []
@@ -147,7 +145,8 @@ let services = [
                 "children": [],
                 "issues": [
                     "Blood Sorrow: You can kinda simulate tracking this but its not very consistent",
-                    "Eldritch Call: Currently untrackable"
+                    "Eldritch Call: Currently untrackable",
+                    "Transfused: Planned"
                 ]
             }
         ],
@@ -182,8 +181,7 @@ let services = [
                 "enabled_path": "warrior",
                 "children": [],
                 "issues": [
-                    "Mantle of the Bovemist: Charge count tracking to be fixed by Wynntils",
-                    "Mantle of the Bovemist looks weird why did you do that: I'm expecting Wynntils to fix mantle tracking soonish? hopefully? so that is where mantles will go. It'll make more sense once that happens"
+                    "Mantle of the Bovemist charges: Planned"
                 ]
             }
         ],

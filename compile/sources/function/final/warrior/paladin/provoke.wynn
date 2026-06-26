@@ -1,5 +1,5 @@
 offset
-{template/widget/square/cooldown(status_effect_active("Provoke"), int(add(value(status_effect_duration("Provoke")); 1)), widget_square_provoke)};
 {$pan@11};
 {template/widget/square/counter/short(gt(debuffs_in_radius_value(32.0; "Provoked"); 0), debuffs_in_radius_value(32.0; "Provoked"))};
-{$pan@-11}
+{$pan@-11};
+{template/widget/square/cooldown(status_effect_active("Provoke"), int(add(value(status_effect_duration("Provoke")); 1)), widget_square_provoke)}

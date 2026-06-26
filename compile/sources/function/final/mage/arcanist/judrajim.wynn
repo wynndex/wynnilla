@@ -1,2 +1,9 @@
 offset
-{template/widget/square/cooldown(status_effect_active("Judrajim"), int(add(value(status_effect_duration("Judrajim")); 1)), widget_square_judrajim)}
+{$pan@11};
+{template/widget/square/counter/short(gt(debuffs_in_radius_value(32.0; "Unstable"); 0), debuffs_in_radius_value(32.0; "Unstable"))};
+{$pan@-11};
+{template/widget/square/cooldown_and_active_flat(
+status_effect_active("Judrajim"), 
+int(add(value(status_effect_duration("Judrajim")); 1)), 
+judrajim_active, 
+widget_square_judrajim)}
