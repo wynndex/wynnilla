@@ -191,6 +191,8 @@ let services = [
     }
 ]
 
+let last_update_date = new Date(2026, 5, 25);
+
 async function copy_template_text(file_path) {
     const response = await fetch(file_path);
     
@@ -385,6 +387,21 @@ function create_service_dom(service) {
     return [service_dom, issues_dom, subservices_dom];
 }
 
+function set_last_updated_splash() {
+    let now = new Date();
+    now = Date.UTC(now.getFullYear(), now.getMonth(), now.getDay());
+
+    let saved_date = Date.UTC(last_update_date.getFullYear(), last_update_date.getMonth(), last_update_date.getDay());
+    let days_passed = Math.floor((now - saved_date) / (1000 * 60 * 60 * 24));
+    if (days_passed == 0) {
+        document.getElementById("last-updated").innerText = "Last updated today";
+    } else if (days_passed == 1) {
+        document.getElementById("last-updated").innerText = "Last updated yesterday";
+    } else {
+        document.getElementById("last-updated").innerText = `Last updated ${days_passed} days ago`;
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     let service_list = document.getElementById("service-list");
     for (const service of services) {
@@ -392,4 +409,11 @@ document.addEventListener("DOMContentLoaded", () => {
             service_list.appendChild(dom_item);
         }
     }
+
+    // get last update
+    set_last_updated_splash();
+
+    document.getElementById("changelog-link").addEventListener("click", () => {
+
+    });
 });
