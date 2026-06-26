@@ -57,9 +57,11 @@ def do_builder():
                             content.insert(content_pointer + 1, sub_item)
                 # Else it is a compiled file
                 else:
-                    output.append(f"{{$pan@{item["x"]}}};")
+                    if item["x"] != 0:
+                        output.append(f"{{$pan@{item["x"]}}};")
                     output.append(f"{{{item["target"]}({item["y"]})}};")
-                    output.append(f"{{$pan@{-item["x"]}}};")
+                    if item["x"] != 0:
+                        output.append(f"{{$pan@{-item["x"]}}};")
                 content_pointer += 1
 
             for i, item in enumerate(output):
@@ -72,6 +74,7 @@ def do_builder():
         destination_path.parent.mkdir(parents=True, exist_ok=True)
         evaluated_output_string = "".join(output)[:-1].replace(" ","").replace("|", " ")
         destination_path.write_text(f"{{with_font(concat_st({evaluated_output_string});\"wynnilla:ui\")}}")
+        # destination_path.write_text(f"{{concat({evaluated_output_string})}}")
 
         pattern = r"wynnilla:.*?/offset_\d+"
 
