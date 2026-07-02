@@ -387,9 +387,9 @@ function create_service_dom(service) {
 
 function set_last_updated_splash() {
     let now = new Date();
-    now = Date.UTC(now.getFullYear(), now.getMonth(), now.getDay());
+    now = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
 
-    let saved_date = Date.UTC(last_update_date.getFullYear(), last_update_date.getMonth(), last_update_date.getDay());
+    let saved_date = Date.UTC(last_update_date.getFullYear(), last_update_date.getMonth(), last_update_date.getDate());
     let days_passed = Math.floor((now - saved_date) / (1000 * 60 * 60 * 24));
     if (days_passed == 0) {
         document.getElementById("last-updated").innerText = "Last updated today";
